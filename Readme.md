@@ -1,3 +1,4 @@
+### Twitter Trends 
 In this day and age, social media platforms like twitter, facebook, instagram and more have troves of data waiting to be analyzed. In this project, I used twitter data. There is data in many forms that can be analyzed such as what users are tweeting from a specific country, what is the most common device being tweeted from and what are the current trends to name a few. I decided to make a simple application which displays the top ten hashtags for that day. To do this, I had to sign up on twitter to get the access tokens and consumer secrets. Twitter is currently still rolling out their v2.0 I decided to use v1.1 for my application.
 
 Doing some maintenance on the EC2 instance so it will not refresh and show the current results. The results refresh every 6 hours.
