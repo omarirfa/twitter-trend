@@ -28,7 +28,8 @@ Some of the tools required to make this project work:
 Tweepy streamlistener class was used to set up the streaming process. There were some additional commands added to get the extended tweet text and filter based on language which were added. A local socket was created to start the streaming on the EC2 instance. I decided to use spark streaming rather than structured streaming since we are not building an ideal application and due to AWS free tier restrictions. Furthermore, spark sets up a DStream using sockettextstream to fetch the tweepy streaming data for further processing. In spark, we split the data based on lines and filter with respect to number of hashtags. This is done using the rdd and sql_context. The processed data is then sent as a .csv to be stored in s3 for the specific day and streamed to the flask instance running on elastic beanstalk. Finally, cron is used to automate script running every 6 hours, cleaning up residual checkpoints made by spark (if any) and moving .csv files to s3.
 
 
-
+### Block Diagram
+![awssparkfloww](awssparkflow.png)
 
 
 ### Improvements
