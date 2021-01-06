@@ -29,7 +29,7 @@ Tweepy streamlistener class was used to set up the streaming process. There were
 
 
 ### Block Diagram
-![awssparkfloww](awssparkflow.png)
+![awssparkfloww](block_diagram.png)
 
 
 ### Improvements
